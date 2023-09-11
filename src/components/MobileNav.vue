@@ -32,9 +32,4 @@
     </nav>
 </template>
 <style>
-.router-link-active {
-    border-bottom: 3px solid #98d56c;
-    color: #98d56c;
-    font-weight: 600;
-}
 </style>

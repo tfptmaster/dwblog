@@ -10,7 +10,7 @@ const date = ref(new Date().getFullYear())
 <template>
  <footer class="bg-slate-900 text-white py-5">
    <p class="text-center font-bold uppercase">
-       DwBlog - {{date}} - Copyright - Tous droits réservés</p>
+       Blog Vue.js - {{date}} - Copyright - Tous droits réservés</p>
 </footer>
   
 </template>
