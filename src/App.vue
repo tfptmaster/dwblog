@@ -1,8 +1,22 @@
 <script setup>
+import Footer from './components/Footer.vue';
+import Header from './components/Header.vue'
+
+const myTitle = "Blog Vue.js"
+
 </script>
 
 <template>
-  <h1 class="text-3xl font-bold underline">Hello world</h1>
+  <div class="flex flex-col justify-between max-h-screen bg-white">
+    <Header v-bind:title="myTitle" />
+  <!-- Content -->
+    <div>
+      Content here
+    </div>
+  <!-- Footer -->
+    <Footer />
+  </div>
+
 </template>
 
 <style scoped>
