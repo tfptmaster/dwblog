@@ -26,7 +26,7 @@ const {desktop, mobile, screenWidth} = useWindowSize()
     <header class="p-6 shadow bg-emerald-800 text-white">
         <div class="container mx-auto flex justify-between items-center">
             <!-- logo du site -->
-            <h3 class="font-bold text-2xl text-center">{{ title }} {{ screenWidth }}</h3>
+            <h3 class="font-bold text-2xl text-center">{{ title }}</h3>
             <!-- nav xl -->
             <DesktopNav  v-if="desktop" />
 
