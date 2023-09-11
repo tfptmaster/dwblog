@@ -10,9 +10,7 @@ const myTitle = "Blog Vue.js"
   <div class="flex flex-col justify-between max-h-screen bg-white">
     <Header v-bind:title="myTitle" />
   <!-- Content -->
-    <div>
-      Content here
-    </div>
+    <router-view />
   <!-- Footer -->
     <Footer />
   </div>
