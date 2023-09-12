@@ -1,9 +1,234 @@
 {
     "posts": [
-      { "id": 1, "title": "json-server", "author": "typicode" }
-    ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" }
-  }
+        {
+          "id": 1,
+          "title": "Vue 2.7 'Naruto' Released",
+          "summary": "Today we are happy to announce that Vue 2.7 Naruto has been released!",
+          "content": "In UMD and CJS builds, these APIs are exposed as properties on the global Vue object When bundling with CJS builds externalized, bundlers should be able to handle ESM interop when externalizing CJS builds. Behavior Differences from Vue 3 The Composition API is backported using Vue 2's getter/setter-based reactivity system to ensure browser compatibility. This means there are some important behavior differences from Vue 3's proxy-based system: All Vue 2 change detection caveats still apply. reactive(), ref(), and shallowReactive() will directly convert original objects instead of creating proxies. This means: Avoid using arrays as root values in reactive() because without property access the array's mutation won't be tracked (this will result in a warning). Reactivity APIs ignore properties with symbol keys. In addition, the following features are explicitly NOT ported: ❌ createApp() (Vue 2 doesn't have isolated app scope) ❌ Top-level await in <script setup> (Vue 2 does not support async component initialization) ❌ TypeScript syntax in template expressions (incompatible w/ Vue 2 parser) ❌ Reactivity transform (still experimental) ❌ expose option is not supported for options components (but defineExpose() is supported in <script setup>).",
+          "category": "JavaScript",
+          "author": "Rachid",
+          "date": "27/08/2022",
+          "image": "https://miro.medium.com/max/700/1*vFC8tDUGLlXIiqT7ymf3xg.png"
+        },
+        {
+          "id": 2,
+          "title": "New Features in React 18",
+          "summary": "React 18 has some exciting new features that are worth checking out.",
+          "content": "React 18 introduces a new feature called 'automatic batching', which allows for more efficient updates to the DOM. Another new feature is the 'startTransition' API, which allows for smoother transitions in your app's UI. Additionally, React 18 includes improvements to server rendering, performance, and more. Check out the official React blog for more information on all of the new features in React 18.",
+          "category": "JavaScript",
+          "author": "John",
+          "date": "18/06/2022",
+          "image": "https://images.unsplash.com/photo-1625838144804-300f3907c110?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        },
+        {
+          "id": 4,
+          "title": "Python 4.0 is Coming Soon",
+          "summary": "Python 4.0 is set to release in the coming months with a host of new features and improvements.",
+          "content": "Python 4.0 is expected to bring several new features and improvements, including improved type annotations, better async support, and enhanced performance through optimizations in the interpreter. Additionally, Python 4.0 will likely drop support for older versions of the language, so developers should start preparing their codebases for the upgrade. Stay tuned for more information on the release of Python 4.0.",
+          "category": "Python",
+          "author": "Sarah",
+          "date": "02/09/2022",
+          "image": "https://images.unsplash.com/photo-1625838144804-300f3907c110?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        },
+        {
+          "id": 5,
+          "title": "Angular 13 Released with Major Improvements",
+          "summary": "Angular 13 has been released with significant improvements and features.",
+          "content": "Angular 13 comes with several new features and improvements, including improved performance and faster startup times. The new version also includes updated dependencies, including TypeScript 4.5, RxJS 7, and Zone.js 0.11. Additionally, Angular 13 introduces new features like strictNullChecks and strictTemplates, which provide better type checking and catch more errors at compile time. Check out the official Angular blog for more information on all the new features and improvements.",
+          "category": "JavaScript",
+          "author": "Mike",
+          "date": "12/11/2022",
+          "image": "https://images.unsplash.com/photo-1625838144804-300f3907c110?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        },
+        {
+          "id": 6,
+          "title": "Announcing the Release of TensorFlow 3.0",
+          "summary": "TensorFlow 3.0 has been officially released with a plethora of new features and improvements.",
+          "content": "TensorFlow 3.0 introduces several new features, including support for more hardware platforms, better performance, and improved compatibility with other machine learning frameworks. Additionally, TensorFlow 3.0 includes new APIs and libraries for developers to use, such as tf.linalg, which provides linear algebra functionality, and tf.signal, which provides signal processing capabilities. Check out the official TensorFlow blog for more information on all of the new features and improvements.",
+          "category": "Machine Learning",
+          "author": "Jessica",
+          "date": "23/01/2023",
+          "image": "https://images.unsplash.com/photo-1625838144804-300f3907c110?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        },
+        {
+          "id": 7,
+          "title": "Python 3.11 Beta Release",
+          "summary": "Python 3.11 Beta has just been released, featuring a number of new improvements and features.",
+          "content": "Python 3.11 Beta introduces a new feature called structural pattern matching, which allows for more concise and readable code when working with complex data structures. Other new features include better error messages, improved type hinting, and more. Check out the official Python documentation for more information on all of the new features in Python 3.11 Beta.",
+          "category": "Python",
+          "author": "Emily",
+          "date": "02/09/2022",
+          "image": "https://images.unsplash.com/photo-1625838144804-300f3907c110?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        },
+        {
+          "id": 8,
+          "title": "The Benefits of Yoga for Mental Health",
+          "summary": "Yoga has been shown to have many positive effects on mental health, including reducing stress and anxiety.",
+          "content": "Research has found that practicing yoga can lead to reduced levels of cortisol, the hormone associated with stress. Yoga has also been found to improve mood and reduce symptoms of anxiety and depression. In addition, the physical practice of yoga can improve overall physical health, which can have a positive impact on mental well-being. If you're looking for a way to improve your mental health, consider giving yoga a try!",
+          "category": "Health",
+          "author": "Sarah",
+          "date": "10/02/2022",
+          "image": "https://images.unsplash.com/photo-1625838144804-300f3907c110?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        },
+        {
+          "id": 9,
+          "title": "The Importance of Diversity in the Workplace",
+          "summary": "Diversity in the workplace has been shown to have many benefits, including increased creativity and better decision-making.",
+          "content": "When a workplace is diverse, it brings together individuals with different backgrounds, experiences, and perspectives. This can lead to increased creativity, as employees are exposed to new ideas and ways of thinking. Additionally, a diverse workforce is better equipped to solve complex problems and make better decisions, as it is able to draw on a wider range of experiences and knowledge. In addition, a diverse workplace is often more welcoming and inclusive, which can lead to higher employee satisfaction and retention. Therefore, it is important for companies to prioritize diversity and inclusion in their hiring and retention practices.",
+          "category": "Business",
+          "author": "Michael",
+          "date": "05/04/2022",
+          "image": "https://images.unsplash.com/photo-1625838144804-300f3907c110?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        },
+        {
+          "id": 10,
+          "title": "The Benefits of Meditation for Physical Health",
+          "summary": "Meditation has been shown to have many positive effects on physical health, including reducing blood pressure and improving sleep.",
+          "content": "Research has found that meditation can have a significant impact on physical health. For example, it has been shown to reduce blood pressure and improve circulation, which can have a positive impact on heart health. Additionally, meditation has been found to improve sleep, which is important for overall physical well-being. Meditation can also reduce inflammation and boost the immune system, which can help prevent illness and disease. If you're looking for a way to improve your physical health, consider incorporating meditation into your daily routine!",
+          "category": "Health",
+          "author": "Jennifer",
+          "date": "20/05/2022",
+          "image": "https://images.unsplash.com/photo-1625838144804-300f3907c110?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        },
+        {
+          "id": 11,
+          "title": "The Benefits of Meditation for Mental Health",
+          "summary": "Meditation is a powerful tool for improving mental health and wellbeing.",
+          "content": "Meditation has been shown to reduce symptoms of anxiety and depression, improve focus and attention, and increase feelings of calm and relaxation. Regular meditation practice can also help to reduce stress and improve sleep quality. There are many different forms of meditation, so it's important to find a practice that works for you. Consider starting with a guided meditation app or class to help you get started.",
+          "category": "Health",
+          "author": "Sarah",
+          "date": "10/02/2023",
+          "image": "https://images.unsplash.com/photo-1625838144804-300f3907c110?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        },
+        {
+          "id": 12,
+          "title": "The Benefits of Plant-Based Eating",
+          "summary": "Plant-based diets are becoming increasingly popular for their health and environmental benefits.",
+          "content": "Studies have shown that plant-based diets can help to reduce the risk of chronic diseases such as heart disease, diabetes, and cancer. Plant-based diets are also more environmentally sustainable than animal-based diets, as they require fewer resources and produce fewer greenhouse gas emissions. There are many delicious plant-based foods and recipes to explore, so consider incorporating more plant-based meals into your diet.",
+          "category": "Health & Wellness",
+          "author": "David",
+          "date": "27/01/2023",
+          "image": "https://images.unsplash.com/photo-1625838144804-300f3907c110?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        },
+        {
+          "id": 13,
+          "title": "The Importance of Hydration for Exercise",
+          "summary": "Staying hydrated is crucial for exercise performance and overall health.",
+          "content": "Water is essential for regulating body temperature, transporting nutrients, and removing waste products. When we exercise, we lose water through sweat and increased respiration, which can lead to dehydration if not replenished. Dehydration can result in decreased exercise performance, muscle cramps, and even heat exhaustion or heat stroke. To stay properly hydrated, drink water before, during, and after exercise, and consider adding electrolytes if you're exercising for an extended period of time.",
+          "category": "Health & Wellness",
+          "author": "Emily",
+          "date": "04/03/2023",
+          "image": "https://images.unsplash.com/photo-1625838144804-300f3907c110?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        },
+        {
+          "id": 14,
+          "title": "The Benefits of Outdoor Exercise",
+          "summary": "Exercising outdoors can provide a wide range of physical and mental health benefits.",
+          "content": "Research has shown that exercising outdoors can help to boost mood, reduce stress, and improve overall wellbeing. Additionally, outdoor exercise can provide more varied terrain and challenges than indoor exercise, which can help to improve balance and coordination. Exercising outdoors also provides an opportunity to soak up vitamin D from the sun, which is important for bone health and immunity. So next time you're planning a workout, consider taking it outside!",
+          "category": "Health & Wellness",
+          "author": "John",
+          "date": "19/02/2023",
+          "image": "https://images.unsplash.com/photo-1625838144804-300f3907c110?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        },
+        {
+          "id": 15,
+          "title": "The Benefits of Strength Training",
+          "summary": "Strength training is a crucial part of any fitness routine, providing numerous health benefits.",
+          "content": "Strength training can help to build muscle, increase bone density, and improve metabolism, which can lead to improved overall health and fitness. Additionally, strength training can help to prevent injury and improve balance and coordination. There are many different types of strength training exercises, from bodyweight exercises to weightlifting, so it's important to find a routine that works for you. Consider working with a personal trainer to develop a safe and effective strength training plan.",
+          "category": "Health & Wellness",
+          "author": "Rachel",
+          "date": "13/04/2023",
+          "image": "https://images.unsplash.com/photo-1625838144804-300f3907c110?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        },
+        {
+          "id": 16,
+          "title": "5 Essential Programming Languages to Learn",
+          "summary": "There are many programming languages out there, but these five are essential for any aspiring programmer to learn.",
+          "content": "If you're just starting out in programming, there are a few essential languages you should learn. These include Python, Java, C++, JavaScript, and SQL. Python is a great language for beginners, while Java and C++ are commonly used in enterprise applications. JavaScript is essential for web development, and SQL is necessary for working with databases. By learning these five languages, you'll have a solid foundation for a career in programming.",
+          "category": "Programming",
+          "author": "John",
+          "date": "02/03/2023",
+          "image": "https://images.unsplash.com/photo-1535378915-5a810fda9665?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "id": 17,
+          "title": "The Importance of Code Documentation",
+          "summary": "Documenting your code is essential for collaboration and maintainability.",
+          "content": "Code documentation is often overlooked, but it's an essential part of any software project. Proper documentation helps other developers understand your code, makes it easier to collaborate, and helps with maintenance down the line. You should aim to document your code as you write it, using clear and concise comments. This will save you and your team time and headaches in the long run.",
+          "category": "Programming",
+          "author": "Jane",
+          "date": "12/04/2023",
+          "image": "https://images.unsplash.com/photo-1505687306855-4e08ef7de30e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "id": 18,
+          "title": "The Benefits of Pair Programming",
+          "summary": "Pair programming can improve code quality, collaboration, and knowledge sharing.",
+          "content": "Pair programming is a technique in which two developers work together on the same codebase. This approach can improve code quality by catching bugs and errors early on, and can help with knowledge sharing and collaboration. Pair programming can also help developers stay focused and avoid distractions. If you're not currently using pair programming in your team, it's worth giving it a try.",
+          "category": "Programming",
+          "author": "Bob",
+          "date": "25/05/2023",
+          "image": "https://images.unsplash.com/photo-1516375700853-a4e1cb81d79d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "id": 19,
+          "title": "The Importance of Code Readability",
+          "summary": "Writing readable code is essential for collaboration and maintenance in software development.",
+          "content": "Writing code that is easy to read and understand is crucial for collaboration between developers and for maintaining code over time. Code that is difficult to read can lead to mistakes, bugs, and longer development times. Good code readability can also make it easier to debug and troubleshoot issues. To improve code readability, consider using clear variable and function names, adding comments where necessary, and adhering to a consistent coding style.",
+          "category": "Programming",
+          "author": "John",
+          "date": "05/03/2023",
+          "image": "https://images.unsplash.com/photo-1593642532459-553f3cc7f579?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "id": 20,
+          "title": "Introduction to React Native",
+          "summary": "React Native is a popular framework for building cross-platform mobile apps.",
+          "content": "React Native is a framework that allows developers to build native mobile apps for both iOS and Android using JavaScript and React. It offers many benefits, including faster development times, code reusability, and a simplified development process. With React Native, developers can build high-quality mobile apps that offer a native user experience without having to write separate code for each platform. If you're interested in learning more about React Native, there are many online resources and tutorials available to help you get started.",
+          "category": "Programming",
+          "author": "Sarah",
+          "date": "15/04/2023",
+          "image": "https://images.unsplash.com/photo-1570232376718-6b55e7d1c6d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "id": 21,
+          "title": "The Basics of Database Design",
+          "summary": "Effective database design is crucial for efficient and scalable software applications.",
+          "content": "Database design is the process of organizing and structuring data in a way that is efficient, scalable, and easy to use. Effective database design is crucial for software applications that handle large amounts of data, as it can help improve performance and reduce errors. There are several key concepts to consider when designing a database, including normalization, indexing, and data types. It's also important to consider the specific needs of your application and how the data will be used. With careful planning and design, you can create a database that is both efficient and effective.",
+          "category": "Programming",
+          "author": "David",
+          "date": "23/05/2023",
+          "image": "https://images.unsplash.com/photo-1575514180138-c2e3a21a68f2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "id": 22,
+          "title": "5 Tips for Writing Clean Code",
+          "summary": "Writing clean, organized code is key for maintainability and collaboration. Here are 5 tips to help improve your code's cleanliness.",
+          "content": "1. Keep your code organized and readable by using consistent indentation, spacing, and naming conventions.\n2. Write modular code that can be easily reused and tested.\n3. Comment your code to explain what it does and how it works.\n4. Eliminate redundant or unnecessary code to reduce clutter.\n5. Refactor code regularly to improve efficiency and readability.",
+          "category": "Programming",
+          "author": "Alex",
+          "date": "05/04/2023",
+          "image": "https://images.unsplash.com/photo-1581098763739-40b83a8a7a60?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+        },
+        {
+          "id": 23,
+          "title": "The Advantages of Using Version Control",
+          "summary": "Version control is a critical tool for developers. Here are some of the advantages of using version control in your development workflow.",
+          "content": "1. Allows you to track changes made to your code over time.\n2. Facilitates collaboration among team members, enabling multiple people to work on the same codebase at the same time.\n3. Provides a backup of your code in case of a catastrophic failure.\n4. Enables you to experiment with new features and roll back changes if necessary.\n5. Helps you to better understand the history of your code and how it has evolved over time.",
+          "category": "Programming",
+          "author": "John",
+          "date": "15/04/2023",
+          "image": "https://images.unsplash.com/photo-1556742048-4385d5a5b3e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+        },
+        {
+          "id": 24,
+          "title": "Debugging Tips for Python Developers",
+          "summary": "Debugging is an essential part of the development process. Here are some tips to help Python developers debug their code more effectively.",
+          "content": "1. Use print statements to help track the flow of your code.\n2. Use a debugger to step through your code and identify where errors are occurring.\n3. Take advantage of Python's built-in logging module to help diagnose issues.\n4. Write unit tests to help catch bugs before they make it to production.\n5. Use an IDE with built-in debugging tools, such as PyCharm.",
+          "category": "Programming",
+          "author": "Sarah",
+          "date": "25/04/2023",
+          "image": "https://images.unsplash.com/photo-1554224152-0aef1a5e5c5f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+        }
+    ]
+}

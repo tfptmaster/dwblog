@@ -6,9 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "json-server": "json-server -d 2000 --watch db.json"
   },
   "dependencies": {
+    "@vueuse/core": "^10.4.1",
+    "axios": "^1.5.0",
     "primeicons": "^6.0.1",
     "vue": "^3.3.4",
     "vue-router": "^4.2.4"
