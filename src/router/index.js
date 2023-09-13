@@ -12,6 +12,7 @@ const Contact = () => import("../views/Contact.vue")
 const Login = () => import("../views/Login.vue")
 const Signup = () => import("../views/Signup.vue")
 const Blog = () => import("../views/Blog.vue")
+const ArticleDetails = () => import("../views/ArticleDetail.vue")
 
 const NotFound = () => import("../views/NotFound.vue")
 
@@ -54,6 +55,14 @@ const router = createRouter({
             path: "/blog",
             name: "Articles",
             component: Blog,
+            meta: {
+                title: "Articles",
+            }
+        },
+        {
+            path: "/details/:id/",
+            name: "ArticleDetails",
+            component: ArticleDetails,
             meta: {
                 title: "Articles",
             }

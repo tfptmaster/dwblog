@@ -1,5 +1,10 @@
 <template>
-    <div class="max-w-sm rounded overflow-hidden shadow-lg">
+    <div 
+      role="button"
+      tabindex="0"
+      aria-label="Allez au detail de l'article"
+      @click="goToArticle(article.id)"
+      class="max-w-sm rounded overflow-hidden shadow-lg">
         <img class="w-full h-[256px] object-cover" :src= "article.image" :alt= "article.title"/>
         <div class="px-6 py-4">
         <div class="font-bold text-xl mb-2">{{ article.title }}</div>
@@ -15,11 +20,18 @@
 </template>
 
 <script setup>
+import {useRouter} from 'vue-router'
 defineProps({
     article : {
-        type: Object
+        type: Object,
+        default: {}
     }
 })
+
+const router = useRouter()
+const goToArticle = (id) => {
+    router.push({name: "ArticleDetails", params:{id: id}})
+}
 
 const truncate = (value, n) => {
     if(value.length > n) {
